@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03/01/2014, 19:52:17
+    Author     : Gil
+*/
+body, html{
+   background-image: url('../imagem/fundo.gif');
+   margin:0px;
+   padding: 0px;
+   font-family: sans-serif;
+   
+}
+#wrap{
+    margin: 0px auto 0 auto;
+   // background: red;
+    padding: 0px;
+}
+
+header#cabecalhoPrincipal{
+    background: rgb(101,101,101);
+    height:260px;
+    margin: 0px;
+    margin-bottom: 50px;
+    box-shadow: -1px 4px 4px rgba(0,0,0,0.7);
+  //  padding-top: 20px;
+   // padding-bottom: 0px;
+  // margin-top: 0;
+  
+  
+}
+header#cabecalhoPrincipal{
+    background: rgb(101,101,101);
+    height:260px;
+    margin: 0px;
+    //margin-bottom: 50px;
+    box-shadow: -1px 4px 4px rgba(0,0,0,0.7);
+  //  padding-top: 20px;
+   // padding-bottom: 0px;
+  // margin-top: 0;
+  
+  
+}
+
+
+#navBar{
+    
+    background: black;
+    margin:0 auto;
+    //width: 1000px;
+    height:40px;
+    box-shadow: -1px 4px 4px rgba(0,0,0,0.5);
+   
+}
+#navBar nav{
+    margin:0 auto;
+    width: 1000px;
+}
+
+
+
+header#cabecalhoPrincipal  nav a:link, header  nav a:visited, header  nav a:active{
+    text-decoration: none;
+  text-transform: uppercase;
+   background: black;
+   color:white;
+   font-size: 0.8em;
+   padding: 18px 4px 2px 20px;
+   float:left;
+   
+  
+}
+header#cabecalhoPrincipal  nav a:hover{
+    background: white;
+    color:black;
+}
+
+header#cabecalhoPrincipal nav #pesquisa{
+    float:right;
+    margin-top: 10px;
+    color:#999999;
+    width:200px;
+    background:white url('../imagem/lupa.gif') no-repeat ;
+    background-position:  right center;
+    border:none;
+    
+}
+
+header#cabecalhoPrincipal #logo{
+    width: 1000px;
+    margin: 0 auto;
+    //background: green;
+    height:220px;
+}
+header#cabecalhoPrincipal #logo img{
+    margin:34px 0px;
+    float:left;
+}
+header#cabecalhoPrincipal h1{
+    text-transform: uppercase;
+    //display: inline;
+    //background: purple;
+    margin:90px 0px 0px 20px;
+     float:left;
+     font-weight: 100;
+     font-size: 1.8em;
+}
+section{
+    width: 1000px;
+    max-width: 1000px;
+   //background: blue;
+    margin:0 auto;
+    padding: 0px;
+}
+header#tituloSection {
+   // background: red;
+    
+}
+
+
+footer{
+    
+    background:black;
+     margin-top: 120px;
+    //margin-top: 20px;
+    height:200px;
+    box-shadow: -1px -3px 4px rgba(0,0,0,0.5);
+    clear:both;
+}

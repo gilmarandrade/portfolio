@@ -1,0 +1,208 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/01/2014, 21:23:20
+    Author     : Gil
+*/
+body{
+    margin: 0;
+}
+#wrap{
+    width: 100%;
+  
+   background: url('../img/back.png') ;
+  background-attachment:fixed;
+   
+}
+
+#todo{
+    width: 1000px;
+    margin:0 auto;
+    font-family: 'century gothic';
+}
+.menuBar{
+    
+   // background: olivedrab;
+    //se largura da tela menor que 1000px position:relative;
+   //se tela maior 
+  //position:fixed;
+  // top:0;
+   //right: 0;
+   
+   width: 100%;
+   z-index: 100000000;
+  
+}
+.menuBar .centro{
+     
+    //background: purple;
+    width:1000px;
+    margin:0px auto;
+   position:fixed;
+   top:0;
+   //right: 0;
+}
+.menuBar .menu{
+   background: white;
+   
+   float: right;
+   font-size: 1.2em;
+    padding-top: 10px;
+    
+   
+}
+.menuBar .menu ul{
+   //background:pink;
+   margin:0;
+   padding:0;
+}
+.menuBar .menu ul li{
+    
+    display: inline;
+   // background:blue;
+    text-transform: uppercase;
+    margin: 20px  10px 20px 10px;
+    line-height: 40px;
+    cursor:pointer;
+}
+
+.conteiner1{
+    margin-top:80px;
+    //background: red;
+    width:1000px;
+    min-height: 500px;
+    clear: both;
+    
+}
+
+.conteiner1 #home{
+    //display: none;
+    //background: yellow;
+    min-width:600px;
+    max-width: 1000px;
+    float:right;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    
+}
+.conteiner1 #home img{
+    margin:0;
+    margin-top: 350px;
+   
+}
+
+.conteiner1 #sobre{
+   // background: red;
+    display: none;
+    width:1000px;
+    float:right;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    height: 350px;
+    padding-top: 80px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+ 
+}
+.conteiner1 #sobre div.parag{
+    //background:green;
+    width:400px;
+  
+    float:right;
+    margin: 0;
+}
+.conteiner1 #sobre img{
+    margin-top:50px;
+    cursor: pointer;
+    //float:right;
+    //background:blue;
+    //margin-top: 90px;
+}
+
+.conteiner1 #contato{
+   // background: green;
+   display: none;
+    width:1000px;
+    float:right;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    height: 230px;
+    padding-top: 200px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+ 
+}
+.conteiner1 #contato p{
+    margin: 0;
+   
+}
+.conteiner1 #contato img{
+    margin:0;
+    margin-top: 110px;
+    cursor: pointer;
+}
+
+.conteiner1 #portifolioCategorias{
+    display: none;
+    //background: blue;
+    width:1000px;
+    max-width: 1000px;
+    float:right;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    height: 400px;
+    //padding-top: 150px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+ 
+}
+.conteiner1 #portifolioCategorias ul{
+    margin: 0;
+    margin-top: 100px;
+    margin-left: 200px;
+    float: left;
+   // background: palegoldenrod;
+    
+}
+.conteiner1 #portifolioCategorias ul li{
+    display: block;
+    margin-bottom: 2px;
+    //background: red;
+    width: 200px;
+  
+}
+.conteiner1 #portifolioCategorias ul li a:link, .conteiner1 #portifolioCategorias ul li a:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2em;
+    color:black;
+    display: block;
+ 
+}
+.conteiner1 #portifolioCategorias ul li a:hover, .conteiner1 #portifolioCategorias ul li a:active{
+color:green;
+font-weight: 600;
+}
+.conteiner1 #portifolioCategorias img{
+    margin-top: 350px;
+    cursor: pointer;
+}
+
+
+.pseudoLink{
+    color:black;
+    cursor: pointer;
+    
+}
+.pseudoLink:hover{
+    color:green;  
+}

@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/12/2013, 17:48:33
+    Author     : Gil
+*/
+article#listaNoticias ul {
+    
+   //background: red;
+    display: block;
+    padding: 0px;
+}
+
+article#listaNoticias ul li{
+    background: rgb(210,210,210);
+    display: block;
+    width: 1000px;
+    //height: 90px;
+    margin-bottom: 25px;
+    min-height: 250px;
+
+}
+article#listaNoticias .topo{
+    width:1000px;
+    min-height: 50px;
+        //height:50px;
+    background: rgb(92,96,102);
+}
+
+article#listaNoticias .topo .data{
+    background: rgb(9,17,77);
+    width:50px;
+    height:50px;
+    color: rgb(210,210,210);
+    float:left;
+    cursor:default;
+}
+article#listaNoticias .topo .data strong{
+    font-size:1.5em;
+    display:block;
+    width:50px;
+    text-align: center;
+    //background: red;
+    font-weight: 600;
+    padding-top: 3px;
+    //margin-top: 20px;
+}
+article#listaNoticias .topo .data .mes{
+    display:block;
+    width:50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+article#listaNoticias .topo .titulo{
+    //background: red;
+    //float:left;
+    width: 840px;
+    padding-left: 60px;
+    padding-top: 6px;
+}
+article#listaNoticias .topo .titulo .dono{
+    //background: yellow;
+    font-size: .7em;
+    text-transform:capitalize;
+    color:white;
+    display: block;
+}
+article#listaNoticias .topo .titulo h2.tituloNoticia{
+     display: block;
+     padding: 0;
+     margin: 0;
+     font-weight: 600;
+     font-size: 1.2em;    
+}
+article#listaNoticias .topo .titulo h2.tituloNoticia a:link, article#listaNoticias .topo .titulo h2.tituloNoticia a:visited{
+    color:black;
+    text-decoration: none;
+}
+article#listaNoticias .topo .titulo h2.tituloNoticia a:hover, article#listaNoticias .topo .titulo h2.tituloNoticia a:active{
+    text-decoration:underline;
+}
+
+article#listaNoticias .topo .btExpandir{
+    //background: pink;
+    width: 50px;
+    height: 50px;
+    display: block;
+   
+   // float:left;
+    float:right;
+}
+article#listaNoticias .topo .btSelectDeselect{
+    //background: white;
+    width: 50px;
+    height: 50px;
+    display: block;
+    
+    //float:left;
+    float:right;
+}
+article#listaNoticias .topo .btSelectDeselect .btSelect{
+    display: block;
+    border:none;
+    width: 50px;
+    height: 50px;
+    background: url(../imagem/selecionar.png);
+    color:transparent;
+    cursor:pointer;
+}
+
+article#listaNoticias .topo .btSelectDeselect .btDeselect{
+    display: block;
+    border:none;
+    width: 50px;
+    height: 50px;
+    background: url(../imagem/deselecionar.png);
+    color:transparent;
+    cursor:pointer;
+}
+
+article#listaNoticias .topo .btSelectDeselect .btSelect:hover{
+    //display: block;
+    //border:none;
+    width: 50px;
+    height: 50px;
+    background: url(../imagem/selecionarHover.png);
+}
+
+article#listaNoticias .topo .btSelectDeselect .btDeselect:hover{
+    //display: block;
+    //border:none;
+    width: 50px;
+    height: 50px;
+    background: url(../imagem/deselecionarHover.png);
+}
+
+article#listaNoticias .descricao{
+    //background: green;
+    padding-left: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 50px;
+}

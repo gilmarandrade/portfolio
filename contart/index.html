@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Bem Vindo!</title>
+
+<script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="jquery.animate-colors-min.js" type="text/javascript"></script>
+
+<style type="text/css" media="screen">
+
+body{
+margin:0;
+padding:0px;
+font: small Helvetica,sans-serif;
+color:#0F0F0F;
+background:  black;
+
+}
+#imagem{
+display:none;
+background: url(cabecalho.jpg) repeat-x;
+height:132px;
+width:100%;
+}
+
+#cabecalho{
+padding:10px;
+text-align: center;
+font: 0em Helvetica,sans-serif;
+color:white;
+margin:0;
+padding:25px;
+
+
+}
+
+#navbar{
+background/: white;
+background:transparent url(menu1.png);
+font: 14px  Helvetica,sans-serif;
+text-align: center;
+padding: 10px;
+display:none;
+
+}
+#navbar a:link{
+
+margin:0;
+background:transparent;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:20px;
+text-decoration: none;
+color:#4F4F4F;
+
+}
+#navbar a:visited{
+color:#4F4F4F;
+background:transparent;
+}
+#navbar a:hover{
+color:white;
+background:red;
+}
+#navbar a:active{
+color:white;
+background:#00CC00;
+}
+
+
+#esq{
+float:left;
+width:430px;
+padding-top:0px;
+padding-bottom:0px;
+padding-left:20px;
+padding-right:50px;
+line-height:170%;
+
+margin:118px 0px 118px 0px;
+display:none;
+
+}
+
+#dir{
+float:left;
+
+margin:20px 0px 20px 0px;
+
+width:0px;
+height:0px;}
+
+#rodape{
+clear:left;
+background: white;
+text-align: center;
+color:#4F4F4F;
+padding: 6px;
+
+display:none;
+}
+
+
+#tudo{width:1000px;
+margin:0 auto;
+
+}
+
+#entrar{font:2.5em Mistral;}
+#entrar:link{text-decoration: none;
+color:white;}
+#entrar:visited{color:    #CFCFCF  ;}
+#entrar:hover{color:red;
+font:2.5em Mistral;}
+#entrar:active{color:  #00FF00 ;
+background:transparent;}
+
+
+::selection {
+backgrou\nd: #551A8B ;
+colo/r:#\FFF;
+background: transparent;
+color:#770000;
+
+}
+img::selection {
+background: #770000;
+}
+
+h1::selection {
+backgrou\nd: #551A8B ;
+colo/r:#\FFF;
+background: #dd0000;
+color:white;
+
+}
+
+
+#/conteudo{display:none/;
+display:block;
+}
+</style>
+		
+
+<script language="javascript">
+
+function colaEfeitos(){
+
+	
+	//capa.animate({backgroundColor:  'black'}, 3000);
+	
+
+
+	
+	capa = $("body");
+	
+	capa.animate({backgroundColor:  '#FF83FA'}, 3000);
+	capa.animate({backgroundColor:  '#FF83FA'}, 10000);
+
+	capa.animate({backgroundColor: '#FF6A6A'}, 3000);
+	capa.animate({backgroundColor: '#FF6A6A'}, 10000);
+
+	capa.animate({backgroundColor: '#836FFF'}, 3000);
+	capa.animate({backgroundColor: '#836FFF'}, 10000);
+
+	capa.animate({backgroundColor: '#FFA54F'}, 3000);
+	capa.animate({backgroundColor: '#FFA54F'}, 10000,colaEfeitos);
+
+}
+
+function aparecer()
+{
+	
+	
+	$("body").animate({ 'backgroundColor': "#000000"},3000,function(){
+
+		$("#imagem").slideDown(5000,function(){
+	    
+			$("#cabecalho").animate( {'font-size':"3em"},2000,function(){
+			
+
+				colaEfeitos();
+				$("#dir").animate({
+					"width":"500px",
+					"height":"375px"
+				}, 1000);
+				$("#esq").fadeIn(2000, function(){$("#rodape").fadeIn(1000);});
+				
+		
+
+			});
+			$("#navbar").fadeIn(5000);
+		
+	  	});
+	});
+	
+	
+	
+}
+
+$(document).ready(function(){
+	//colaEfeitos();
+	//aparecer();
+});
+
+
+
+</script>
+
+
+</head>
+
+<body onLoad="aparecer()">
+
+
+
+<div id="imagem" title="Imagem disponível em http://lobusdaestepe.files.wordpress.com/2011/03/rainbow_colorful_wood_background.jpg">
+
+<h1 id="cabecalho">Projeto ContArte</h1>
+
+<div id="navbar">
+   <a href="inicio.html"  title="Entre!">Inicio</a><a href="projeto.html" title="Conheça o projeto!" >Projeto</a><a  href="galeria.html" title="Conheça nossa galeria de quadros!">Galeria</a><a href="fotos.html" title="Confira fotos de nossos encontros!">Fotos</a><a href="material.html" id="x" title="Confira o material de aula e aprenda em casa!">Material</a><a href="exposicao.html" title="Saiba como foi nossa bellíssima exposição no IFRN!" >Exposição</a>
+</div>
+</div>
+
+<div id="tudo">
+<div id="conteudo">
+
+	<div id="esq">
+	   <img id="bvindo" src="bemvindo.png"/>
+	   <p>Seja bem vindo ao ContArte, um projeto realizado no IFRN-Zona Norte com o apoio do Proex, que visa estabelecer o primeiro contato dos alunos e comunidade com o mundo das artes através da pintura à óleo.</p>
+	   <a id="entrar" title="Conheça nosso projeto!" href="inicio.html">Entrar</a>
+	</div>
+
+	
+	   <img id="dir" src="paleta.jpg" />
+	
+</div>
+<div id="rodape">Projeto ContArte. 2013 &nbsp; | &nbsp; IFRN-Zona Norte &nbsp; | &nbsp; Apoio ProEx</div>
+
+</div>
+</body>
+</html>

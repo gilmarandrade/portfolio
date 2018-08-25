@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfólio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/estiloBasicoGeral.css" />
+        <link rel="stylesheet" type="text/css" href="css/estiloLista.css" />
+
+
+        <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/jquery.cycle2.min.js"></script>
+        <script src="js/javascript.js"></script>
+
+    </head>
+    <body id="wrap" >
+        <div id="visualizar">
+            <div id="fundo">
+            </div>
+            <div id="quadro">
+                <img id="imagem" src="" alt="" /> 
+            </div>
+        </div>
+        <div id="todo" >
+
+            <!--Menu fixo-->
+            <div id="menuPrincipal" class="menuBar" >
+                <div class="centro">
+                    <nav class="menu">
+                        <ul>
+
+                            <li class="toSobre" onclick="sobre();"  >sobre</li>
+                            <li class="toPortifolio" onclick="portifolio();" >portfólio</li>
+                            <li class="toContato" onclick="contato();" >contato</li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!--Principal -->
+            <section id="principal" class="conteiner1">
+                <!--HOME-->
+                <article id="home">
+                    <img id="img1" src="img/logo.png" alt="" onclick="$('#img1').load(function() {
+                             //   alert('largura ' + console.log($img.width));
+                            });"/>
+                </article>
+
+                <!--SOBRE-->
+                <article id="sobre">
+
+                    <div class='parag' >
+                        <p>Meu nome é Gilmar Andrade, sou recém-formado em Informática pelo IFRN, 
+                            atualmente estudo TI na UFRN, e dedico meu tempo livre ao desenvolvimento web e ao design gráfico.</p>
+
+                        <p>Neste portfólio, construído por mim, existem alguns logotipos, artes, 
+                            layouts, sistemas web e outros projetos que desenvolvi.</p>
+                        <img src="img/logo.png" title="HOME" onclick="home();"/>
+                    </div>
+
+                </article>
+
+                <!--CONTATO-->
+                <article id="contato">
+                    <p>(84) 8782-1768</p>
+                    <p>(84) 9827-5945</p>
+                    <p>gilmar.victhur@outlook.com</p>
+                    <img src="img/logo.png" title="HOME" onclick="home();"/>
+                </article>
+
+                <!--CATEGORIAS -->
+                <article id="portifolioCategorias">
+
+                    <ul>
+                        <li><a href="#" onclick="logotipos();" >logotipos</a></li>
+                        <li><a href="#" onclick="impressos();">impressos</a></li>
+                        <li><a href="#" onclick="outros();">outros</a></li>
+                        <li><a href="#" onclick="sites();">sites</a></li>
+
+                    </ul>
+
+                    <img src="img/logo.png" title="HOME" onclick="home();"/>
+                </article>
+            </section>
+
+
+            <!--LOGOTIPOS-->
+            <section id="logotipos" class="conteiner2">
+                <header>
+                    <div class="menuBar" >
+
+                        <div class="centro2">
+                            <h1><span class="pseudoLink" onclick="portifolio2();" title="voltar para PORTFÓLIO"  >&Lt;</span> logotipos</h1>
+
+                            <nav class="menu">
+                                <ul>
+
+                                    <li class="toSobre" onclick="sobre2();"  >sobre</li>
+                                    <li class="toPortifolio" onclick="portifolio2();" >portfólio</li>
+                                    <li class="toContato" onclick="contato2();" >contato</li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </header>
+
+                <article id="logotipo1" class="projeto-paisagem">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('gerassol.png', '#logotipo1');"  title="clique para ampliar">
+                            <img src="img/gerassol.png" alt="">
+                            <div class="cycle-overlay">logotipo do projeto</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('gerassol2.png', '#logotipo1');"  title="clique para ampliar">
+                            <img src="img/gerassol2.png" alt="">
+
+
+                        </div>
+
+                        <div onclick="exibirImagem('gerassolapp.png', '#logotipo1');"  title="clique para ampliar"> 
+                            <img src="img/gerassolapp.png" alt="">
+                            <div class="cycle-overlay">logotipo do aplicativo</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('gerarrifa.png', '#logotipo1');"  title="clique para ampliar"> 
+                            <img src="img/gerarrifa.png" alt="">
+                            <div class="cycle-overlay">logotipo do projeto gerarrifa - baseado na identidade visual do gerassol</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Criação do Logotipo Gerassol</h2>
+                        <h3>programas utilizados</h3>
+                        <h4>inkscape</h4>
+                        <h4>illustrator</h4>
+                        <h3>colaboradores</h3>
+                        <h4>Ruan Garcia</h4>
+                        <h4>Wendel Júnior</h4>
+                        <p>Logotipo criado para um grande projeto desenvolvido no IFRN-ZN, o Gerassol. Um carregador solar para celulares que possui um aplicativo responsável por gerenciar o uso e economia de energia do aparelho. Da identidade visual desse projeto também surgiu outro aplicativo - Gerarrifa, um programa gerenciador de sorteios. </p>
+
+                    </div>
+                </article>
+
+                <article id="logotipo2" class="projeto-paisagem">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('literalma.png', '#logotipo2');"  title="clique para ampliar">
+                            <img src="img/literalma.png" alt="">
+                            <div class="cycle-overlay">logotipo do grupo</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('literalmaOriginal.png', '#logotipo2');"  title="clique para ampliar">
+                            <img src="img/literalmaOriginal.png" alt="">
+                            <div class="cycle-overlay">desenho original por Dantas Júnior</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('passaro.png', '#logotipo2');"  title="clique para ampliar"> 
+                            <img src="img/passaro.png" alt="">
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Vetorização do Logotipo Literalma</h2>
+                        <h3>programas utilizados</h3>
+                        <h4>illustrator</h4>
+                        <h3>desenho original</h3>
+                        <h4>Dantas Júnior</h4>
+                        <p>Vetorização do logotipo do Literalma - um grupo que tinha o objetivo de despertar o gosto pela literatura nos alunos do IFRN. O desenho original foi feito por Dantas Júnior.</p>
+
+                    </div>
+                </article>
+
+                <article id="logotipo3" class="projeto-paisagem">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('kekule1.png', '#logotipo3');"  title="clique para ampliar">
+                            <img src="img/kekule1.png" alt="">
+
+                        </div>
+
+                        <div onclick="exibirImagem('kekule2.png', '#logotipo3');"  title="clique para ampliar">
+                            <img src="img/kekule2.png" alt="">
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Criação do Logotipo Geração Kekulé</h2>
+                        <h3>programas utilizados</h3>
+                        <h4>illustrator</h4>
+                        <h4>inkscape</h4>
+                        <h3>colaboradores</h3>
+                        <h4>Ruan Garcia</h4>
+                        <h4>Mateus Patrício</h4>
+                        <p>Criação da identidade visual da Turma do 4º ano de Informática no IFRN, os responsáveis pela ideia do logotipo foram os alunos Ruan e Mateus.</p>
+
+                    </div>
+                </article>
+
+            </section>
+
+            <!--IMPRESSOS-->
+            <section id="impressos" class="conteiner2">
+                <header>
+                    <div class="menuBar" >
+
+                        <div class="centro2">
+                            <h1><span class="pseudoLink" onclick="portifolio2();" title="voltar para PORTFÓLIO"  >&Lt;</span> impressos</h1>
+
+                            <nav class="menu">
+                                <ul>
+
+                                    <li class="toSobre" onclick="sobre2();"  >sobre</li>
+                                    <li class="toPortifolio" onclick="portifolio2();" >portfólio</li>
+                                    <li class="toContato" onclick="contato2();" >contato</li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </header>
+
+                <article id="impresso1" class="projeto-retrato">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('cartaz.png', '#impresso1');"  title="clique para ampliar">
+                            <img src="img/cartaz.png" alt="">
+
+                        </div>
+
+                        <div onclick="exibirImagem('cartaz2.png', '#impresso1');"  title="clique para ampliar">
+                            <img src="img/cartaz2.png" alt="">
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Criação do Cartaz Semana do Meio Ambiente</h2>
+                        <h3>programas utilizados</h3>
+                        <h4>illustrator</h4>
+                        <p>Esse cartaz foi resultado de uma atividade avaliativa na Gracom, escola onde fiz um curso de utilização do Adobe Illustrator.</p>
+
+                    </div>
+                </article>
+                
+                 <article id="impresso2" class="projeto-paisagem">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('placaFormatura1.png', '#impresso2');"  title="clique para ampliar">
+                            <img src="img/placaFormatura1.png" alt="">
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Criação da Placa de Formatura da Turma Informática 2013</h2>
+                        <h3>programas utilizados</h3>
+                        <h4>illustrator</h4>
+                        <p>Esse é o layout da placa de formatura que fiz para minha turma de Informática do IFRN.</p>
+
+                    </div>
+                </article>
+
+            </section>
+
+            <!--SITES-->
+            <section id="sites" class="conteiner2">
+                <header>
+                    <div class="menuBar" >
+
+                        <div class="centro2">
+                            <h1><span class="pseudoLink" onclick="portifolio2();" title="voltar para PORTFÓLIO"  >&Lt;</span> sites</h1>
+
+                            <nav class="menu">
+                                <ul>
+
+                                    <li class="toSobre" onclick="sobre2();"  >sobre</li>
+                                    <li class="toPortifolio" onclick="portifolio2();" >portfólio</li>
+                                    <li class="toContato" onclick="contato2();" >contato</li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </header>
+
+                <article id="site1" class="projeto-paisagem">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('sitecontart.png', '#site1');"  title="clique para ampliar">
+                            <img src="img/sitecontart.png" alt="">
+                            <div class="cycle-overlay">página de boas vindas</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('sitecontart2.png', '#site1');"  title="clique para ampliar">
+                            <img src="img/sitecontart2.png" alt="">
+                            <div class="cycle-overlay">galeria do site</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('sitecontart3.png', '#site1');"  title="clique para ampliar"> 
+                            <img src="img/sitecontart3.png" alt="">
+                            <div class="cycle-overlay">visualizador de imagens da galeria</div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Criação do layout para site ContArt</h2>
+                        <h3>ferramentas utilizadas</h3>
+                        <h4>inkscape</h4>
+                        
+                        <h3>linguagens utilizadas</h3>
+                        <h4>HTML</h4>
+                        <h4>CSS</h4>
+                        <h4>JavaScript</h4>
+
+                        <p>O contart era um projeto desenvolvido no IFRN para promover o contato dos alunos com a arte através da pintura à óleo. O site foi criado para divulgar os quadros pintados durante as aulas. Visite o <a target="_blank" href="contart/index.html">modelo do site</a>.</p>
+                        
+                    </div>
+                </article>
+
+                <article id="site2" class="projeto-paisagem">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('siteskrillex1.png', '#site2');"  title="clique para ampliar">
+                            <img src="img/siteskrillex1.png" alt="">
+                            <div class="cycle-overlay">página inicial</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('siteskrillex2.png', '#site2');"  title="clique para ampliar">
+                            <img src="img/siteskrillex2.png" alt="">
+                        </div>
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Criação do layout para site Skrillex</h2>
+                        <h3>ferramentas utilizadas</h3>
+                        <h4>inkscape</h4>
+                        
+                        <h3>linguagens utilizadas</h3>
+                        <h4>HTML5</h4>
+                        <h4>CSS</h4>
+
+                        <p>Esse pequeno site -para o cantor Skrillex- foi um trabalho desenvolvido para a disciplina de Autoria Web no IFRN. Veja o site <a target="_blank" href="skrillex/html/index.html">aqui</a>.</p>
+
+                    </div>
+                </article>
+
+                <article id="site3" class="projeto-paisagem">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('siteIntegrated1.gif', '#site3');"  title="clique para ampliar">
+                            <img src="img/siteIntegrated1.gif" alt="">
+                            <div class="cycle-overlay">página de gerenciamento de notícias</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('siteIntegrated2.gif', '#site3');"  title="clique para ampliar">
+                            <img src="img/siteIntegrated2.gif" alt="">
+                        </div>
+
+                        <div onclick="exibirImagem('integratedLogo.png', '#site3');"  title="clique para ampliar"> 
+                            <img src="img/integratedLogo.png" alt="">
+                            <div class="cycle-overlay">logotipo</div>
+
+                        </div>
+                        
+                       <div onclick="exibirImagem('siteIntegrated3.png', '#site3');"  title="clique para ampliar"> 
+                            <img src="img/siteIntegrated3.png" alt="">
+                            <div class="cycle-overlay">Diagrama Entidade-Relacionamento</div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Criação do site para Projeto Integrated</h2>
+                        <h3>ferramentas utilizadas</h3>
+                        <h4>illustrator</h4>
+                        <h4>fireworks</h4>
+                        <h4>NetBeans</h4>
+                        <h4>MySql</h4>
+                        
+                        <h3>linguagens utilizadas</h3>
+                        <h4>HTML5</h4>
+                        <h4>CSS3</h4>
+                        <h4>JavaScript</h4>
+                        <h4>PHP</h4>
+                        <h4>XML</h4>
+                        <h4>SQL</h4>
+                        
+                        <h3>colaboradores</h3>
+                        <h4>Wendel Júnior</h4>
+                        <h4>André Vitor</h4>
+                        <h4>Juarez Augusto</h4>
+
+                        <p>Esse foi o último projeto desenvolvido no IFRN, um site de tecnologia com várias funcionalidades, construído com PHP orientado a objetos e no padrão MVC. O logotipo original foi criado por Wendel Júnior.<a target="_blank" href="integrated/index.php">Veja o site (endereço absoluto aqui<)</a></p>
+
+                    </div>
+                </article>
+
+                
+                    <article id="site4" class="projeto-paisagem">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('sitegrated1.gif', '#site3');"  title="clique para ampliar">
+                            <img src="img/siteInted1.gif" alt="">
+                            <div class="cycle-overlay">página de gerenciamento de notícias</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('sitegrated2.gif', '#site3');"  title="clique para ampliar">
+                            <img src="img/siteIntegr2.gif" alt="">
+                        </div>
+
+                        <div onclick="exibirImagem('integdLogo.png', '#site3');"  title="clique para ampliar"> 
+                            <img src="img/integraogo.png" alt="">
+                            <div class="cycle-overlay">logotipo</div>
+
+                        </div>
+                        
+                       <div onclick="exibirImagem('siteIrated3.png', '#site3');"  title="clique para ampliar"> 
+                            <img src="img/siteIntated3.png" alt="">
+                            <div class="cycle-overlay">Diagrama Entidade-Relacionamento</div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Criação do GeraLayout</h2>
+                        <h3>ferramentas utilizadas</h3>
+                        <h4>fireworks</h4>
+                        <h4>NetBeans</h4>
+                        
+                        <h3>linguagens utilizadas</h3>
+                        <h4>HTML5</h4>
+                        <h4>CSS3</h4>
+                        <h4>JavaScript & plugins jQuery</h4>
+                      
+                      
+
+                        <p>Esse é meu próprio framework responsivo, baseado no <a target="_blank" href="http://purecss.io">Pure CSS</a>. <a target="_blank" href="http://geralayout.bl.ee">Veja alguns exemplos</a></p>
+
+                    </div>
+                </article>
+                
+                
+                
+                 <article id="site5" class="projeto-paisagem">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('sitegrated1.gif', '#site3');"  title="clique para ampliar">
+                            <img src="img/siteInted1.gif" alt="">
+                            <div class="cycle-overlay">página de gerenciamento de notícias</div>
+
+                        </div>
+
+                        <div onclick="exibirImagem('sitegrated2.gif', '#site3');"  title="clique para ampliar">
+                            <img src="img/siteIntegr2.gif" alt="">
+                        </div>
+
+                        <div onclick="exibirImagem('integdLogo.png', '#site3');"  title="clique para ampliar"> 
+                            <img src="img/integraogo.png" alt="">
+                            <div class="cycle-overlay">logotipo</div>
+
+                        </div>
+                        
+                       <div onclick="exibirImagem('siteIrated3.png', '#site3');"  title="clique para ampliar"> 
+                            <img src="img/siteIntated3.png" alt="">
+                            <div class="cycle-overlay">Diagrama Entidade-Relacionamento</div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Criação do Gerarrifa</h2>
+                        <h3>ferramentas utilizadas</h3>
+                        <h4>fireworks</h4>
+                        <h4>NetBeans</h4>
+                        <h4>MySql</h4>
+                        
+                        <h3>linguagens utilizadas</h3>
+                        <h4>HTML5</h4>
+                        <h4>CSS3</h4>
+                        <h4>JavaScript & plugins jQuery</h4>
+                        <h4>PHP</h4>
+                        <h4>SQL</h4>
+                        <h4>Ajax</h4>
+                      
+                      
+
+                        <p>Um site para gerenciamento e realização de sorteio on-line utilizando o framework GeraLayout. Foi desenvolvido com PHP orientado a objetos utilizando o padrão MVC. Disponível para demonstração em <a target="_blank" href="http://gerarrifa.bl.ee">gerarrifa.bl.ee</a></p>
+
+                    </div>
+                </article>
+
+            </section>
+
+
+            <!--OUTROS-->
+            <section id="outros" class="conteiner2">
+                <header>
+                    <div class="menuBar" >
+
+                        <div class="centro2">
+                            <h1><span class="pseudoLink" onclick="portifolio2();" title="voltar para PORTFÓLIO"  >&Lt;</span> outros</h1>
+
+                            <nav class="menu">
+                                <ul>
+
+                                    <li class="toSobre" onclick="sobre2();"  >sobre</li>
+                                    <li class="toPortifolio" onclick="portifolio2();" >portfólio</li>
+                                    <li class="toContato" onclick="contato2();" >contato</li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </header>
+
+                <article id="outro1" class="projeto-retrato">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('shiryu.png', '#outro1');"  title="clique para ampliar">
+                            <img src="img/shiryu.png" alt="">
+
+                        </div>
+
+                        <div onclick="exibirImagem('shiryuarmadura.png', '#outro1');"  title="clique para ampliar">
+                            <img src="img/shiryuarmadura.png" alt="">
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Vetorizaçao do Shiryu</h2>
+                        <h3>programas utilizados</h3>
+                        <h4>illustrator</h4>
+
+                        <p>Essa foi uma atividade feita para o curso de computação gráfica na Gracom.</p>
+
+                    </div>
+                </article>
+
+                <article id="outro2" class="projeto-retrato">
+
+                    <div  class="cycle-slideshow"
+                          data-cycle-fx="fadeout"
+                          data-cycle-timeout=5000
+                          data-cycle-speed="2000"
+                          data-cycle-slides="> div">
+                        <span class="cycle-pager"></span>
+
+                        <div onclick="exibirImagem('homemdeferro.png', '#outro2');"  title="clique para ampliar">
+                            <img src="img/homemdeferro.png" alt="">
+
+                        </div>
+
+                        <div onclick="exibirImagem('homemferrovetor.png', '#outro2');"  title="clique para ampliar">
+                            <img src="img/homemferrovetor.png" alt="">
+                            <div class="cycle-overlay">comparação entre malha de gradiente e arte finalizada</div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dados">
+                        <h2>Vetorizaçao do Homem de Ferro</h2>
+                        <h3>programas utilizados</h3>
+                        <h4>illustrator</h4>
+
+                        <p>Essa foi a atividade final feita para o curso de computação gráfica na Gracom utilizando a ferramenta Mesh Tool.</p>
+
+                    </div>
+                </article>
+            </section>
+        </div>
+
+
+    </body>
+</html>

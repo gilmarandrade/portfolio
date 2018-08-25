@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Inicio</title>
+
+
+<script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="jquery.animate-colors-min.js" type="text/javascript"></script>
+
+
+<style type="text/css" media="screen">
+
+body{
+margin:0;
+padding:0;
+background:black;
+}
+#tudo{
+width:1000px;
+height:450px;
+background:green;
+margin:115px auto auto auto;
+padding:0;
+
+display:none;
+}
+
+a h2{
+font: 1.7em "Arial Black";
+color:white;
+
+}
+a p{
+font: 0.7em Helvetica;
+color:#00ef55;
+}
+a:link{
+text-decoration:none;
+background: red;
+text-align:center;
+}
+a:visited{
+background: red;
+}
+a:hover{
+background: #00cc00;
+
+}
+a:active{
+background: #00cc00;
+}
+
+.wh{
+height:150px;
+width:200px;
+
+}
+#q1{
+display:block;
+background:black;
+float:left;
+
+}
+#q2{
+display:block;
+background:black;
+float:left;
+
+}
+#q3{
+display:block;
+background:black;
+float:left;
+
+}
+#q4{
+display:block;
+background:black;
+float:left;
+
+}
+#q5{
+display:block;
+background:black;
+float:left;
+
+}
+
+#d1{
+display:block;
+
+float:left;
+background:blue;
+}
+#d2{
+display:block;
+
+float:left;
+background:blue;
+}
+#d3{
+display:block;
+
+float:left;
+background:blue;
+}
+#d4{
+display:block;
+
+float:left;
+background:blue;
+}
+#d5{
+display:block;
+
+float:left;
+background:blue;
+}
+#d6{
+display:block;
+
+float:left;
+background:blue;
+}
+#d7{
+display:block;
+
+float:left;
+background:blue;
+}
+#d8{
+display:block;
+
+float:left;
+background:blue;
+}
+#d9{
+display:block;
+
+float:left;
+background:blue;
+}
+#d10{
+display:block;
+
+float:left;
+background:blue;
+}
+
+</style>
+
+<script language="javascript">
+
+function colaEfeitos(){
+
+
+	
+	capa = $("body");
+	capa.animate({backgroundColor:  '#FF83FA'}, 2000);
+	capa.animate({backgroundColor:  '#FF83FA'}, 8000);
+
+	capa.animate({backgroundColor: '#FF6A6A'}, 2000);
+	capa.animate({backgroundColor: '#FF6A6A'}, 8000);
+
+	capa.animate({backgroundColor: '#836FFF'}, 2000);
+	capa.animate({backgroundColor: '#836FFF'}, 8000);
+
+	capa.animate({backgroundColor: '#FFA54F'}, 2000);
+	capa.animate({backgroundColor: '#FFA54F'}, 8000,colaEfeitos);
+
+}
+
+function aparecer(){
+
+	$("#tudo").fadeIn(1000, function(){
+	
+	$("#q1").animate({backgroundColor:'#ff0000'},1000)
+	$("#q2").animate({backgroundColor:'#ff0000'},1000)
+	$("#q3").animate({backgroundColor:'#ff0000'},1000)
+	$("#q4").animate({backgroundColor:'#ff0000'},1000)
+	$("#q5").animate({backgroundColor:'#ff0000'},1000, colaEfeitos)
+
+	
+	});
+	
+}
+
+$(document).ready(function(){
+
+$("body").animate({backgroundColor:  '#000000'}, 3000, aparecer);
+
+	
+});
+
+
+	
+
+
+</script>
+
+</head >
+
+<body>
+
+<div id="tudo">
+<a href="projeto.html" id="q1" class="wh">
+	<h2>PROJETO</h2>
+	<p>Saiba mais sobre esse projeto com o objetivo de estabelecer o primeiro contato com a arte da pintura à óleo</p>
+</a>
+<img id="d1" src="tela0.jpg" class="wh"/> 
+<img id="d2" src="tela1.jpg" class="wh"/> 
+<a href="material.html" id="q4" class="wh">
+	<h2>MATERIAL</h2>
+	<p>Aprenda pintura à óleo em casa a partir do rico material didático que produzimos especialmente para você</p>
+</a>
+
+<img id="d3" src="tela2.jpg" class="wh"/> 
+<img id="d4" src="tela3.jpg" class="wh"/>
+<a href="galeria.html" id="q2" class="wh">
+	<h2>GALERIA</h2>
+	<p>Aprecie todas as belíssimas telas à óleo pintadas ao longo deste curso com as mais variadas técnicas</p>
+</a>
+<img id="d5" src="tela4.jpg" class="wh"/>
+<img id="d6" src="tela2.jpg" class="wh"/>
+<img id="d7" src="tela0.jpg" class="wh"/>
+<a href="fotos.html" id="q3" class="wh">
+	<h2>FOTOS</h2>
+	<p>Veja as fotos da execução dos oito meses de curso, conheça os participantes e o nosso ambiente criativo</p>
+</a>
+
+<img id="d8" src="tela4.jpg" class="wh"/>
+<img id="d9" src="tela3.jpg" class="wh"/>
+<img id="d10" src="tela1.jpg" class="wh"/>
+<a href="exposicao.html" id="q5" class="wh">
+	<h2>EXPOSIÇÃO</h2>
+	<p>Confira as fotos da exposição, a fase final do nosso curso, onde os resultados foram expostos ao público</p>
+</a>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

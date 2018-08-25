@@ -1,0 +1,75 @@
+CREATE DATABASE <NOMEu301841223_inte>;
+USE <u301841223_inte>;
+
+CREATE TABLE downloads (
+    Id integer not null primary key AUTO_INCREMENT,
+    Nome varchar(70) not null,
+    Descricao varchar(400),
+    Data datetime,
+    Num_Downloads bigint not null,
+    Url varchar(200) not null
+);
+
+/*Scripts do banco de dados - Gilmar)*/
+CREATE TABLE feed ( 
+    Id int not null primary key AUTO_INCREMENT,  
+    Nome varchar(50) not null,
+    Descricao varchar(200),
+    Url varchar(200) not null,
+    Imagem varchar(200),
+    Novas int not null 
+);
+
+
+
+CREATE TABLE noticia ( 
+    Id int not null primary key AUTO_INCREMENT,  
+    Titulo varchar(200),  
+    Descricao text not null,
+    DataPub datetime,    	     		
+    Link varchar(200), 
+    Status tinyint(1) not null,
+    Dono int not null,
+    foreign key(Dono) references feed(Id)		
+);
+
+
+ALTER TABLE  noticia ADD INDEX ( Link, Dono, DataPub ) ;
+
+
+/*Scripts do banco de dados - André :)*/
+CREATE TABLE Usuario (
+	Id INT(10) not null auto_increment,
+    Nome VARCHAR (150) not null,
+    Email VARCHAR (100) not null,
+    Login VARCHAR (100) not null,
+    Senha VARCHAR (20) not null,
+    primary key (Id)
+);
+
+/*Scripts para a criação das tabelas de Tópicos e Comentários*/
+CREATE TABLE Topico(
+    Id INT NOT NULL AUTO_INCREMENT,
+    Usuario INT NOT NULL,
+    Titulo VARCHAR (100) NOT NULL,
+    Texto VARCHAR (10000) NOT NULL,
+    PRIMARY KEY (Id),
+    FOREIGN KEY (Usuario) REFERENCES Usuario (Id)
+);
+
+CREATE TABLE Comentario(
+    Id INT NOT NULL AUTO_INCREMENT,
+    Usuario INT NOT NULL,
+    Texto VARCHAR (10000) NOT NULL,
+    PRIMARY KEY (Id),
+    FOREIGN KEY (Usuario) REFERENCES Usuario (Id)
+);
+
+CREATE TABLE TopicoComentario(
+    IdTopico INT NOT NULL ,
+    IdComentario INT NOT NULL ,
+    PRIMARY KEY ( IdTopico, IdComentario ) ,
+    FOREIGN KEY ( IdTopico ) REFERENCES Topico( Id ) ,
+    FOREIGN KEY ( IdComentario ) REFERENCES Comentario( Id )
+);
+
