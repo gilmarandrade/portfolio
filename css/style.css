@@ -2,22 +2,6 @@
 /**
  * CONFIGURAÇÃO DAS FONTES
  */
-@font-face{
-    font-family: "Century Gothic";
-    src: url('../fonts/GOTHIC.TTF');
-}
-@font-face{
-    font-family: "Century Gothic Bold";
-    src: url('../fonts/GOTHICB.TTF');
-}
-@font-face{
-    font-family: "Century Gothic Bold Italic";
-    src: url('../fonts/GOTHICBI.TTF');
-}
-@font-face{
-    font-family: "Century Gothic Italic";
-    src: url('../fonts/GOTHICI.TTF');
-}
 
 @keyframes backgroundmove{
     0%{
@@ -116,11 +100,14 @@
 
 }
 body{
-    font-family: "Century Gothic", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 
 }
 .center{
     margin: 0 auto;
+    padding: 50px 10px;
 }
 .clear{
     clear: both;
@@ -130,6 +117,16 @@ a{
     color: rgb(0,128,0);
 }
 
+.back {
+    transition: .3s all ease-out;
+    position: relative;
+    left: -20px;
+    top: -20px;
+    padding: 20px;
+}
+.back:hover {
+    left: -40px;
+}
 
 #header-box{
     background: url('../img/background-cube-dark.png');
@@ -159,7 +156,7 @@ a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Century Gothic";
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     font-size: 19px;
     padding: 5px 10px;
@@ -193,12 +190,13 @@ a{
     background: cyan;
     width: 100px;
     height: 15px;
+    margin-bottom: 15px;
     display: block;
     background: rgb(0, 128, 0);
     content: "";
 }
 #content-box article header h1{
-    font-family: "Century Gothic";
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     font-size: 32px;
     text-transform: uppercase;
@@ -208,6 +206,7 @@ a{
 #content-box article p{
     text-align: justify;
     margin-bottom: 20px;
+    margin-top: 20px; 
 }
 #content-box article .category-box{
     background: url("../img/background-dashed-green.png");
@@ -244,7 +243,8 @@ a{
     left: 90px;
     line-height: 80px;
     text-transform: uppercase;
-    font-family: "Century Gothic Bold";
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
     font-size: 19px;
     color:rgb(0,128,0);
 
@@ -415,23 +415,25 @@ a{
 }
 
 #portfolio-box{
-    background: white url("../img/background-cube-light.png");
     background-attachment: fixed;
-    padding: 0 10px;
+    padding: 0;
     padding-bottom: 60px;
+    background-size: cover;
+    background-position: bottom;
 }
 #portfolio-box header{
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 #portfolio-box header:before{
     width: 100px;
     height: 15px;
+    margin-bottom: 10px;
     display: block;
     background: rgb(0, 128, 0);
     content: "";
 }
 #portfolio-box header h1{
-    font-family: "Century Gothic";
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     font-size: 32px;
     text-transform: uppercase;
@@ -442,91 +444,36 @@ a{
 .portfolio-item{
     margin-bottom: 60px;
 }
-.portfolio-item:after{
-    margin-top: 30px;
-    width: 300px;
-    height: 6px;
-    display: block;
-    background: rgb(0, 128, 0);
-    content: "";
-}
-.portfolio-item .image-preview{
-    position: relative;
-    width: 100%;
-    height: 220px;
-    background: url('../img/background-dashed-green.png');
-    cursor: pointer;
-}
-.portfolio-item .image-preview .image{
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-}
-.portfolio-item .image-preview .image-hover{
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, .3);
-    transition: all .5s;
-    -webkit-transition: all .5s;
-}
-.portfolio-item .image-preview .image-hover i{
-    position: absolute;
-    left:50%;
-    margin-left: -50px;
-    top:50%;
-    margin-top: -50px;
-    font-size: 60px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    background: rgba(255, 255, 255, .4);
-    color: rgb(0, 128, 0);
-    transition: all .5s;
-    -webkit-transition: all .5s;
-}
-.portfolio-item .image-preview:hover .image-hover{
-    background: rgba(0,128,0, .6);
-}
-.portfolio-item .image-preview:hover .image-hover i{
-    background: rgba(0,128,0, .6);
-    color: white;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-}
+
 .portfolio-item .description{
     padding-top: 20px;
+    padding-bottom: 20px;
 } 
-.portfolio-item .description h1{
+.portfolio-item h1{
     font-size: 24px;
-    font-family: "Century Gothic Bold";
-    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
     color: rgb(0, 128,0);
 } 
-.portfolio-item .description h2{
+.portfolio-item h2{
     font-size: 12px;
-    font-family: "Century Gothic";
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     margin-top: 20px;
 } 
-.portfolio-item .description h3{
+.portfolio-item h3{
     font-size: 12px;
-    font-family: "Century Gothic Bold";
-    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
 }
-.portfolio-item .description p{
+.portfolio-item p{
     font-size: 16px;
-    font-family: "Century Gothic Bold";
-    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
     text-align: justify;
     margin-top: 20px;
+    line-height: 1.4;
 }
 
 
@@ -597,7 +544,8 @@ a{
 }
 #galery figure figcaption p{
     font-size: 16px;
-    font-family: "Century Gothic Bold";
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
     padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 30px;
@@ -717,7 +665,7 @@ a{
      * Páginas do portfólio
      */
     #portfolio-box .center{
-        width: 300px;
+        width: 290px;
     }
     .portfolio-item .image-preview{
         width: 300px;
@@ -784,16 +732,17 @@ a{
         top:0px;
     }
 
+    .back{
+        top: 0;
+    }
+
     #portfolio-box .center{
-        width: 500px;
+        width: 600px;
     }
     #portfolio-box header{
-        margin-top: 120px;
+        padding-top: 120px;
     }
-    .portfolio-item .image-preview{
-        width: 500px;
-        height: 360px;
-    }
+
     /**
      * Galeria
      */
@@ -851,10 +800,10 @@ a{
         float: left;
     } 
     .portfolio-item .description{
-        float: left;
-        width: 420px;
-        padding-left: 40px;
-        padding-top: 0;
+        /* float: left; */
+        /* width: 420px; */
+        /* padding-left: 40px; */
+        /* padding-top: 0; */
     } 
 
 
@@ -900,10 +849,7 @@ a{
     #portfolio-box .center{
         width: 1050px;
     }
-    .portfolio-item .description{
-        width: 500px;
-        padding-left: 45px;
-    } 
+ 
     .two-columns:after{
         margin-bottom: 60px;
     }
@@ -927,11 +873,7 @@ a{
     .two-columns .portfolio-item:after{
         background: transparent;
     }
-    .two-columns .portfolio-item .description{
-        width: 500px;
-        padding-left: 0;
-        padding-top: 20px;
-    }
+
 
     /**
      * Galeria
@@ -942,3 +884,61 @@ a{
     }
 
 }
+
+
+.info {
+    background: rgb(0,128,0);
+    color: white;
+}
+
+blockquote {
+    line-height: 1.7;
+    font-weight: 100;
+    padding-left: 30px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: right;
+    font-style: italic;
+}
+
+.category {
+    /* background: white; */
+    display: inline-block;
+    width: 45%;
+    height: 200px;
+    margin: 8px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: 5px solid white; */
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.category div {
+    position: absolute;
+    background: rgba(0, 128, 0, 0.733) url(../img/background-dashed-green.png);
+    background-position: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s all ease-out;
+}
+
+.category:hover div {
+    opacity: 1;
+    background-position: 30px;
+}
+
+.category div h2 {
+    margin-top: -20px;
+    transition: .2s all ease-out;
+}
+
+.category:hover div h2 {
+    margin-top: 80px;
+}
+
