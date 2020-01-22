@@ -669,11 +669,11 @@ Whatsapp share button
 }
 
 .botao-wpp:hover {
-    background-color: darken(#25d366, 5%);
+    background-color: #21a150;
 }
 
 .botao-wpp:focus {
-    background-color: darken(#25d366, 15%);
+    background-color: #19773b;
 }
 
 
